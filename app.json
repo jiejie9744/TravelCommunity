@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/page1/page1",
+    "pages/page2/page2",
+    "pages/page3/page3",
+    "pages/page4/page4",
+    
+    "pages/page2/page1-1",
+    "pages/page2/page1-2",
+    "pages/page2/page1-3",
+    "pages/page2/page1-4",
+
+    "pages/page2/page2-1",
+    "pages/page2/page2-2",
+    "pages/page2/page2-3",
+    "pages/page2/page2-4",
+
+    "pages/page2/page3-1",
+    "pages/page2/page3-2",
+    "pages/page2/page3-3",
+    "pages/page2/page3-4",
+
+
+    "pages/page1/t1",
+    "pages/page1/t2",
+    "pages/page1/t3",
+    "pages/page1/t4",
+    "pages/page1/t5",
+    "pages/page1/t6",
+
+    "pages/page1/gengduo",
+    "pages/page1/road1",
+    "pages/page1/road2",
+    "pages/page1/road3",
+    "pages/page1/road4"
+    
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4C79FA",
+    "navigationBarTitleText": "趣学教育研学旅行",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/page1/page1",
+      "text": "首页",
+      "iconPath": "img/tabicon/tab1.png",
+      "selectedIconPath": "img/tabicon/tab1_ac.png"
+    },
+    {
+      "pagePath": "pages/page2/page2",
+      "text": "路线",
+      "iconPath": "img/tabicon/tab2.png",
+      "selectedIconPath": "img/tabicon/tab2_ac.png"
+    },
+    {
+      "pagePath": "pages/page3/page3",
+      "text": "攻略",
+      "iconPath": "img/tabicon/tab3.png",
+      "selectedIconPath": "img/tabicon/tab3_ac.png"
+    },
+    {
+      "pagePath": "pages/page4/page4",
+      "text": "我的",
+      "iconPath": "img/tabicon/tab4.png",
+      "selectedIconPath": "img/tabicon/tab4_ac.png"
+    }
+    ]
+    
+  },
+  "sitemapLocation": "sitemap.json"
+}

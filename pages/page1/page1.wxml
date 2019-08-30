@@ -1,0 +1,101 @@
+<swiper class='swp' indicator-dots='true' autoplay='true' indicator-active-color='#cfcfcf'
+circular='true'
+interval='3800'>
+
+  <block wx:for="{{swpimg}}" wx:key="*this">
+    <swiper-item class='swp-it'>
+      <image src="{{item}}" class='slide-img'></image>
+    </swiper-item>
+  </block>
+
+</swiper>
+
+
+
+<view class='menu'>
+
+  <navigator url='/pages/page1/t1' class='menu-item'>
+    <image src='/img/tubiao/tu1.png' class='menu-img' mode='widthFix'></image>
+    <text class='menu-mc'>研学宗旨</text>
+  </navigator>
+
+  <navigator url='/pages/page1/t2' class='menu-item'>
+    <image src='/img/tubiao/tu2.png' class='menu-img' mode='widthFix'></image>
+    <text class='menu-mc'>风景名胜</text>
+  </navigator>
+
+  <navigator url='/pages/page1/t3' class='menu-item'>
+    <image src='/img/tubiao/tu3.png' class='menu-img' mode='widthFix'></image>
+    <text class='menu-mc'>红色线路</text>
+  </navigator>
+
+  <navigator url='/pages/page1/t4' class='menu-item'>
+    <image src='/img/tubiao/tu4.png' class='menu-img' mode='widthFix'></image>
+    <text class='menu-mc'>港澳风情</text>
+  </navigator>
+  <navigator url='/pages/page1/t5' class='menu-item'>
+    <image src='/img/tubiao/tu5.png' class='menu-img' mode='widthFix'></image>
+    <text class='menu-mc'>吃货攻略</text>
+  </navigator>
+
+  <navigator url='/pages/page1/t6' class='menu-item'>
+    <image src='/img/tubiao/tu6.png' class='menu-img' mode='widthFix'></image>
+    <text class='menu-mc'>关于我们</text>
+  </navigator>
+
+
+
+
+</view>
+
+<block wx:if='{{1}}'>
+  <view class='tongzhi'>
+    <navigator url='' class='xinxi'>
+      <image class='xinxi-icon' src='/img/tubiao/laba.png'>
+      </image>
+      <text class='xinxi-text'>08-09       关于xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+      <image class='xinxi-arrow' src='/img/tubiao/arrow.png'></image>
+    </navigator>
+
+    <navigator url='' class='xinxi'>
+      <image class='xinxi-icon' src='/img/tubiao/laba.png'>
+      </image>
+      <text class='xinxi-text'>08-09       关于xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+      <image class='xinxi-arrow' src='/img/tubiao/arrow.png'></image>
+    </navigator>
+
+    <navigator url='' class='xinxi'>
+      <image class='xinxi-icon' src='/img/tubiao/laba.png'>
+      </image>
+      <text class='xinxi-text'>08-09       关于xxxxxxxxxxxxxxxxxxxxxxxxxxxx</text>
+      <image class='xinxi-arrow' src='/img/tubiao/arrow.png'></image>
+    </navigator>
+  </view>
+</block>
+
+<view class='qukuai'>
+  <image src='/img/tubiao/huo.png' class='huo'></image>
+  <text class='t01'>精选</text>
+  <view class='m01' bindtap='gengduo'>更多
+   
+  </view><image class='arrow' src='/img/tubiao/arrow.png' mode='aspectFit'> </image>
+  
+
+</view>
+
+<view class='zuixin'>
+  <block wx:for='{{recomimg}}'>
+    <navigator url='{{item.url}}' class='zuixin-item'>
+      <image src='{{item.src}}' mode='widthFix' class='zuixin-img'></image>
+      <text class='zuixin-mc'>名称</text>
+      <view class='zuixin-jiage'>
+        <text class='zuixin-jiage0'>￥</text>
+        <text class='zuixin-jiage1'>88</text>
+        <text class='zuixin-jiage2'> x人付款</text>
+      </view>
+    </navigator>
+  </block>
+
+
+
+</view>

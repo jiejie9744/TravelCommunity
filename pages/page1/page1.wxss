@@ -1,0 +1,172 @@
+.swp {
+  height: 200px;
+  width: 100%;
+}
+
+.slide-img {
+  height: 200px;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+  border-bottom: 18px solid gainsboro
+}
+
+.menu-item {
+  width: 33%;
+  padding: 22rpx 88rpx;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-img {
+  width: 100%;
+  align-self: center;
+}
+
+.menu-mc {
+  font-size: 13px;
+  align-self: center;
+  white-space: nowrap;
+  padding-top: 12px;
+  font-weight: 500;
+}
+
+.tongzhi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  
+  padding: 1px 5px;
+  
+  border-bottom: 18px solid gainsboro
+}
+
+.xinxi {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 5px;
+}
+
+.xinxi-icon {
+  width: 22px;
+  height: 22px;
+  box-shadow: 2px px 2px gainsboro;
+}
+
+.xinxi-text {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+
+.xinxi-arrow {
+  width: 13px;
+  height: 13px;
+}
+
+.qukuai {
+  
+  padding:3px 0;
+  
+  display: flex;
+  background: aliceblue;
+  align-items: center;
+  
+}
+
+.huo {
+  width: 22px;
+  height: 22px;
+  box-shadow: 2px px 2px gainsboro;
+  margin-left: 20px;
+}
+
+.t01 {
+  color: gray;
+  flex: 1;
+  text-shadow: 1px 1px 1px gainsboro;
+  padding-left: 3px;
+}
+
+.m01 {
+  font-size: 15px;
+  color: gray;
+  margin-right: 5px;
+  text-shadow: 2px 2px 2px gainsboro;
+  
+}
+
+.arrow{
+  width: 15px;
+  height: 15px;
+  
+}
+
+
+.zuixin {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1px;
+}
+
+.zuixin-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px 2px 78px 2px ;
+  box-sizing: border-box;
+  
+  position: relative;
+  
+  
+  
+}
+
+.zuixin-img {
+  
+  
+  width: 100%;
+  height: 150px;
+ 
+  border-radius: 10px;
+  
+  
+  
+
+
+  
+  
+
+}
+
+.zuixin-mc {
+  font-size: 15px;
+  padding: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top:66%;
+  
+}
+.zuixin-jiage{
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top:77%;
+}

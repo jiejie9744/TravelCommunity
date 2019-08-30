@@ -1,0 +1,27 @@
+<view class="navtop">
+  <scroll-view scroll-x wx:key="dex">
+    <block wx:for='{{biaoti}}' wx:for-item='neirong' wx:key="*this">
+      <view data-index='{{index}}' class="navtop-item {{index==currentindex?'active':'no'}} " bind:tap="clicknav">
+        <text>{{neirong}}</text>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+
+
+
+
+<view class='zuixin'>
+  <block wx:for='{{jianjie}}' wx:key="*this" >
+    <navigator url='{{item.url}}' class='zuixin-item'>
+      <text class="jianjie">XXX简介</text>
+      <image src='{{item.src}}' mode='widthFix' class='zuixin-img'></image>
+      <text class='zuixin-mc'>名称</text>
+      <view class='zuixin-jiage'>
+        <text class='zuixin-jiage0'>￥</text>
+        <text class='zuixin-jiage1'>88</text>
+        <text class='zuixin-jiage2'> x人付款</text>
+      </view>
+    </navigator>
+  </block>
+</view>

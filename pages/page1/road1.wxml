@@ -1,0 +1,4 @@
+<w-swiper images="{{banners}}"/>
+
+<w-tab-control class='tab-control' titles="{{titles}}" bind:tabclick="tabClick"/>
+1

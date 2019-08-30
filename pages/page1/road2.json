@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-swiper": "/common/w-swiper/w-swiper",
+    "w-tab-control": "/common/w-tab-control/w-tab-control"
+  }
+}

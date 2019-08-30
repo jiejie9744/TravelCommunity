@@ -1,0 +1,19 @@
+<!--components/w-goods-item/w-goods-item.wxml-->
+<view class='goods-item' bindtap='itemClick'>
+
+  <image class='image' src="{{goodsitem.image}}"  mode='widthFix'>
+  </image>
+  
+  
+
+
+  
+  <view class='desc-info'>
+    <view class='title'>{{goodsitem.title}}</view>
+    <view class='info'>
+      <text class='price'>¥{{goodsitem.price}}</text>
+      <image class='icon' src="/img/tubiao/huo.png"/>
+      <text class='cfav'>{{goodsitem.cfav}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<w-recommend recommends="{{recommends}}"/>
+
+
+<w-goods goodslist="{{goods}}"/>
