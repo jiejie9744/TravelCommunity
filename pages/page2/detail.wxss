@@ -1,0 +1,91 @@
+/* pages/page2/page1-1.wxss */
+page{
+  
+  background-color: rgb(238, 235, 228);
+}
+
+
+.top{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 5px solid gainsboro;
+
+  
+}
+
+.icon{
+  width: 40px;
+  
+}
+
+.icon image{
+  width: 100%
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.t1{
+  font-size: 22px
+}
+.t2{
+  margin: 5px;
+  font-size: 16px;
+  color: rgb(114, 107, 107)
+  
+}
+.tab-control view{
+   background-color: white
+
+}
+/* .content-box{
+  letter-spacing:3px;
+  border-top: 5px solid gainsboro;
+  background-color: rgb(238, 235, 228);
+ align-items: center;
+  display: flex;
+  width: 100%;
+  
+  height: 100%;
+  justify-content: center;
+} */
+/* .text-box{
+  font-size: 16px;
+  width: 100%;
+  
+  
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  
+  line-height:1.5em
+} */
+/* .text1{
+ padding-left: 15px
+}
+.text2{
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  line-height: 60px;
+  
+
+}
+.text4 image{
+  width: 100%
+}
+*/
+
+.text{
+  padding: 20rpx 100rpx;
+  line-height: 2.5rem;
+}
+image{
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+<view class="column">
+  <image class='image1' src="http://txt15-2.book118.com/2018/0216/book153451/153450477.jpg"></image>
+    <view class="biaoti1">广东工业大学</view>
+  <view class="biaoti2">录取通知书</view>
+  <view class="text-container">
+    <view>亲爱的{{ name }}同学： <image  class='image2' mode='aspectFit' src='http://img1.gtimg.com/sports/pics/hv1/183/126/2154/140096163.jpg'></image></view>
+    
+    <view>
+      <text>
+      经广东省招生委员会批准，你被我校{{ college }}学院{{ specialty }}专业录取，学号为{{ student_no }}，为期四年本科，请凭录取通知书于2020年9月2日到我校{{ xiaoqu }}校区报到。</text>
+    </view>
+
+    <view class="bottom-container">
+      <view>盖   章：<image class="image2" mode='aspectFit' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577891565387&di=8f6cb8a2ba91e4a76e40afcb20f325ef&imgtype=0&src=http%3A%2F%2Fwww.5tu.cn%2Fattachments%2Fimage_files%2Fmonth_1512%2F151231160668d5aa8e888749c4.jpg"></image></view>
+
+      <view>签发人：广东工业大学官方</view>
+      <view>时  间：2020年7月2日</view>
+    </view>
+  </view>
+  <button>下载录取通知书word版</button>
+</view>

@@ -1,0 +1,21 @@
+/* pages/page1/t1.wxss */
+page{
+  background-color: rgb(230, 227, 227);
+}
+
+.biaoti{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shengming{
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+}
+
+.bottom{
+  text-align: right;
+  padding: 10px;
+}

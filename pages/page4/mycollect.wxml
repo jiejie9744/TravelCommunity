@@ -1,0 +1,14 @@
+
+<view class="box" wx:for='{{storageList}}' wx:key="index" style='position:relative'>
+  <view wx:if='{{item.tag}}' class="container" style='{{item.txtStyle}}' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index='{{index}}' bindtap="toDetail">
+    <view class="img-container">
+      <image src='{{item.littlePicture}}' mode="widthFix"></image>
+    </view>
+    <view class="text-container">
+      <text>{{item.city}}</text>
+    </view>
+  </view>
+  <view wx:if='{{item.tag}}' class="shanchu" capture-bind:tap="delItem" data-index='{{index}}'>
+    删除
+  </view>
+</view>

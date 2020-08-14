@@ -1,0 +1,24 @@
+<!--pages/page4/luqu.wxml-->
+<view class="container column">
+    <view class="guanli"><button bindtap="toManage">管理员登陆</button></view>
+  <view class="login-icon">
+    <image class="login-img" src="/img/tubiao/huo.png"></image>
+  </view>
+  <view class="word">录取通知书查询系统</view>
+  <view class="login-from">
+    <form bindsubmit="formSubmit" class='form'>
+      <view class="myno row">
+        <!-- 考生号 -->
+        <view>考生号</view>
+        <input name="no" bindblur='getInput' value='{{number}}'placeholder="请输入考生号" />
+      </view>
+
+      <!--按钮-->
+      <view class="loginBtnView">
+        <button class="loginBtn" form-type='submit' >查询</button>
+      </view>
+    </form>
+
+  </view>
+
+</view>

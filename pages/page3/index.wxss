@@ -1,0 +1,77 @@
+/* pages/page3/page3.wxss */
+page{
+  background-color: rgb(230, 227, 227);
+  margin: 0
+}
+.icon {
+  width: 110rpx;
+  height: 110rpx;
+  position: fixed;
+  right: 20rpx;
+}
+.newComment{
+  background-color: rgb(252, 122, 165);
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  
+}
+.content{
+  margin-bottom: 22rpx;
+  min-height: 50px;
+  color: rgb(138, 132, 132);
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  
+}
+.touxiang image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  clip-path: circle(50rpx at center);
+}
+.nicheng{
+  font-size: 26rpx;
+  flex: 1;
+  
+}
+.time{
+  font-size: 26rpx;
+  color: rgb(177, 165, 165)
+}
+.text{
+  display: flex;
+  padding: 0 30px 10px 30px;
+  
+}
+
+.imagelist{
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap
+}
+.imageitem image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+   /* clip-path: circle(120rpx at center); */
+   
+}
+.imageitem{
+  width: 130px;
+  height: 95px;
+  display: inline-block;
+  border-radius: 100px;
+  margin: 0 8rpx
+  
+}

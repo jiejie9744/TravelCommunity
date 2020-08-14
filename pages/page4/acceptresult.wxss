@@ -1,0 +1,41 @@
+/* pages/page4/acceptresult.wxss */
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.image1{
+  width: 100%;
+}
+.image2{
+width: 90px;
+height: 110px;
+  
+}
+.biaoti1{
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+.biaoti2{
+   margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+.text-container{
+  line-height:28px;
+  margin-top:10px;
+  padding: 20px;
+}
+.bottom-container{
+margin-top: 10px;
+float: right;
+margin-right: 30px;
+
+  
+}

@@ -1,0 +1,16 @@
+
+
+<!-- 线路 -->
+<view class='zuixin'>
+	<block wx:for='{{routeList}}' wx:key="*this">
+		<navigator url='/pages/page2/detail?city={{item.city}}' class='zuixin-item'>
+			<view class="content">
+				<image src='{{item.littlePicture}}' mode='widthFix' class='zuixin-img'></image>
+				<view class='column'>
+					<view class='chengshi'>{{item.city}}</view>
+					<view class='jianjie'>{{item.info}}</view>
+				</view>
+			</view>
+		</navigator>
+	</block>
+</view>

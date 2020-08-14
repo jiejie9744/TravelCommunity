@@ -1,0 +1,59 @@
+page{
+  background-color: rgb(238, 231, 231)
+}
+
+.top{
+  background-color: #4C79FA;
+  height: 170px;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.touxiang {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  clip-path: circle(64rpx at center);
+}
+
+
+
+
+.content-box{
+  margin-top: -326rpx;
+}
+
+.liebiao{
+  width: 85%;
+  height: 90px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 22rpx;
+  border-radius: 12px
+  
+}
+.liebiao-item{
+  display: flex;
+  flex-direction: column;
+  word-wrap: normal;
+  margin:  12rpx;
+  width: 22%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-wrap: nowrap
+}
+
+.liebiao-item image{
+  width: 70%;
+  
+}

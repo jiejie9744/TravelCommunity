@@ -1,0 +1,30 @@
+<!-- <button bindtap="chooseExcel">解析并上传excel数据</button>
+<button bindtap="downloadExcel">下载excl数据</button>
+<view>{{fileUrl}}</view>
+<view wx-if='{{fileUrl!=""}}'>
+  <button bindtap="copyFileUrl">
+    复制下载地址,到浏览器查看
+  </button>
+</view> -->
+<view class="container column">
+  <view class="word">管理员登陆</view>
+  <view class="login-from column">
+    <form bindsubmit="formSubmit" class='form'>
+      <view class="myno row">
+        <!-- 账号 -->
+        <view>账号:</view>
+        <input name="number" bindblur='getInput' value='{{number}}' placeholder="请输入管理员账号" />
+      </view>
+      <view class="myno row">
+        <!-- 密码 -->
+        <view>密码:</view>
+        <input name="password" bindblur='getInput' value='{{number}}' placeholder="请输入管理员密码" />
+      </view>
+
+      <!--按钮-->
+      <view class="loginBtnView">
+        <button class="loginBtn" form-type='submit'>登陆</button>
+      </view>
+    </form>
+  </view>
+</view>

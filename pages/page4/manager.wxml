@@ -1,0 +1,19 @@
+<view class="container">
+  <view>学生录取信息</view>
+  <view class="row">
+    <view>录取号</view>
+    <view>姓名</view>
+    <view>性别</view>
+    <view>省份</view>
+    <view>科类</view>
+    <view>专业</view>
+    <view>学院</view>
+    <view>校区</view>
+    <view>学号</view>
+    <view>录取通知书</view>
+  </view>
+  <button>查询</button>
+  <button>添加</button>
+  <button>删除</button>
+  <button>修改</button>
+</view>

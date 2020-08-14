@@ -1,0 +1,82 @@
+page{
+  height: 100%;
+  background-size:100%;
+
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  
+}
+.guanli button{
+  font-size: 13px;
+
+
+}
+.container {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  
+} 
+
+.word{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*登录图片*/
+.login-icon{
+  flex: none;
+  margin: 0 auto;
+  margin-top: 200rpx;
+}
+.login-img{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 110rpx;
+  opacity: 0.6;
+}
+ 
+/*表单内容*/
+.login-from {
+  margin-top: 90rpx;
+  
+  height:100%;
+  width: 80%;
+}
+.myno{
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 30px auto;
+  width: 90%;
+  
+}
+.myno input{
+  padding-left: 15px;
+  text-align: left;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border:1px solid grey;
+  border-radius: 50rpx;
+}
+.loginBtnView{
+  width: 90%;
+  margin: 0 auto;
+}
+.loginBtn {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 35px;
+  color: #fff;
+  background-color:#7e8ef0;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+}
+ 

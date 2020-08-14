@@ -1,0 +1,18 @@
+
+<view class="content-container column">
+  <block wx:for='{{newreplay}}' wx:key='index'>
+    <view class="column content" bindtap="toNewreplayDetail" data-topicid='{{item.topicid}}' data-openid='{{item.topicopenid}}' >
+      <view class="row">
+        <view class="touxiang">
+          <image src="{{ item.touxiang }}"></image>
+        </view>
+        <view class="nicheng">{{ item.nicheng }}</view>
+        <view class="time"> {{ item.time }}</view>
+      </view>
+      <view class="text"><text>{{ item.comment }}</text></view>
+    
+    </view>
+  </block>
+
+</view>
+

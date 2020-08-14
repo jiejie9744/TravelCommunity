@@ -1,0 +1,69 @@
+/* pages/page4/mycollect.wxss */
+page{
+  background-color: rgb(223, 221, 221);
+}
+
+.shoucang{
+  text-align: center;
+  padding: 5px;
+}
+
+.box{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  border-radius: 8px;
+
+}
+.container{
+  position:relative;
+  width: 100%;
+  z-index:1;
+  overflow: hidden;
+  background-color: white;
+  justify-content:flex-start;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  min-height: 150rpx;
+}
+
+.img-container{
+  display: flex;
+    width: 25%;
+    justify-content: center;
+   
+    
+}
+.img-container image{
+  
+  width: 100%;
+  border-radius: 6px;
+}
+.text-container{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+
+}
+.shanchu{
+  position: absolute;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #e64340;
+  width: 175rpx;
+  text-align: center;
+  z-index: 0;
+  right: 0;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+border-radius: 8px;
+}
+

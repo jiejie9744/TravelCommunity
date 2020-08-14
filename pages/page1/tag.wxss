@@ -1,0 +1,107 @@
+page{
+  background-color: rgb(230, 227, 227);
+  margin: 0;
+  width: 100%
+ }
+ 
+ .navtop{
+   display: flex;
+   
+   height: 60px;
+   width: 100%;
+   padding-top: 7px ;
+   background-color: rgb(230, 227, 227);
+   overflow:hidden;
+   white-space:nowrap;  
+ }
+ .navtop scroll-view{
+  height: 100%;
+   width: 100%;
+   overflow:hidden;   
+ }
+ .navtop-item{
+   margin: 3px;
+   height: 48px;
+   width: 27%;
+   line-height: 48px;
+   display: inline-block;
+   background-color: white;
+   text-align: center;
+   border-radius: 10px;
+   font-size: 15px;
+   
+   
+ }
+ .active{
+   background-color:  rgba(137, 166, 245, 0.8);
+   color: white;
+   font-size: 18px;
+ }
+ .zuixin {
+   display: flex;
+   flex-direction: column;
+   
+ }
+ .zuixin-item {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+    position: relative;
+   border-bottom: 10px solid rgb(230, 227, 227);
+   margin-bottom: 20px;
+   
+ }
+ 
+ .zuixin-img {
+   width: 100%;
+   height: 150px;
+   border-radius: 10px;
+   
+   
+ }
+ 
+ 
+ .content{
+  position: relative;
+   color: rgb(255, 255, 255);
+   
+ 
+ }
+ 
+ 
+ .column{
+   background-color: rgba(18, 86, 212, 0.5);
+   width: 100%;
+   position: absolute;
+   text-align: left;
+   padding: 5px 0px 10px 5px;
+   
+   display: flex;
+   flex-direction: column;
+   
+   bottom: 8%;
+   
+   
+   right: 0;
+ 
+ 
+ }
+ .chengshi{
+   padding-left: 8px;
+   font-size: 35rpx;
+   font-weight: 600;
+   
+   
+ }
+ .jianjie{
+   
+   font-size: 26rpx;
+   padding: 5rpx 30rpx 0 26rpx;
+   
+ }
+ .jingdian{
+  font-size: 26rpx;
+  padding-left: 8px;
+ 
+ }
+ 

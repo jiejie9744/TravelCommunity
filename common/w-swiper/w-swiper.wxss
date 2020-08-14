@@ -1,6 +1,6 @@
 /* components/w-swiper/w-swiper.wxss */
 .swiper {
-  height: 360rpx;
+  height: 400rpx;
 }
 
 .swiper-image {

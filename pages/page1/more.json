@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-tab-control": "/common/w-tab-control/w-tab-control"
+  },
+  "navigationBarTitleText": "路线景点"
+}

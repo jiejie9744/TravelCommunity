@@ -1,0 +1,37 @@
+<!-- 轮播图 -->
+<swiper class='swp' indicator-dots='true' autoplay='true' indicator-active-color='#cfcfcf' circular='true' interval='3800'>
+	<block wx:for="{{swpimg}}" wx:key="*this">
+		<swiper-item class='swp-it'>
+			<image src="{{item}}" class='slide-img'></image>
+		</swiper-item>
+	</block>
+</swiper>
+
+<!-- 菜单栏 -->
+<view class='menu'>
+	<block wx:for='{{tubiao}}'>
+		<navigator url='{{item.url}}' class='menu-item' hover-class='none'>
+			<image src='{{item.src}}' class='menu-img' mode='widthFix'></image>
+			<text class='menu-mc'>{{item.mc}}</text>
+		</navigator>
+	</block>
+</view>
+
+<!-- 分隔区块 -->
+<view class='qukuai'>
+	<image src='/img/tubiao/huo.png' class='huo'></image>
+	<text class='t01'>精选</text>
+	<view class='m01' bindtap='toMorePage'>更多
+	</view>
+	<image class='arrow' src='/img/tubiao/arrow.png' mode='aspectFit'> </image>
+</view>
+
+<!-- 精选 -->
+<view class='jingxuan'>
+	<block wx:for='{{recomimg}}'>
+		<navigator url='{{item.url}}' class='jingxuan-item'>
+			<image src='{{item.src}}' mode='widthFix' class='jingxuan-img'></image>
+			<text class='jingxuan-mc'>{{item.mc}}</text>
+		</navigator>
+	</block>
+</view>

@@ -1,0 +1,45 @@
+<!-- 轮播图 -->
+
+<w-swiper class='swiper' images="{{banners}}" />
+
+<!-- 顶部 -->
+<view class="top">
+	<view class="column">
+		<text class="t1"> {{city}} 研学营</text>
+		<text class="t2"> {{description}}</text>
+	</view>
+	<view class="icon" bindtap="onCollectTab">
+		<image mode="widthFix" src="{{goods.tag?'/img/tubiao/collect_active.png':'/img/tubiao/collect.png'}}">
+		</image>
+	</view>
+</view>
+
+<!-- 选项tab -->
+<w-tab-control class='tab-control' titles="{{titles}}" bind:tabclick="tabClick" />
+
+<!-- 内容体 -->
+<view class="content-box">
+	
+		<!-- 课程介绍 -->
+		<view wx:if="{{currentIndex==0}}" class="text1 text">
+			<text>
+			{{courseInfo.introduction}}
+			</text>
+		</view>
+		<!-- 课程特色 -->
+		<view wx:if='{{currentIndex==1}}' class="text2 text">
+			<text>
+			{{courseInfo.features}}
+			</text>
+		</view>
+		<!-- 课程服务 -->
+		<view wx:if='{{currentIndex==2}}' class="text4">
+			<image src='{{courseInfo.service}}' mode="widthFix"></image>
+		</view>
+		<!-- 课程计划 -->
+		<view wx:if='{{currentIndex==3}}' class="text4">
+			<image src='{{courseInfo.plan}}' mode="widthFix"></image>
+		</view>
+
+	
+</view>

@@ -1,0 +1,74 @@
+<view class="box">
+  <view class="content-container column">
+
+    <!-- 该说说信息 -->
+    <view class="column content" bindtap="toDetail" data-topicid='{{item._id}}' data-openid="{{item._openid}}">
+      <view class="row">
+        <view class="touxiang">
+          <image src="{{ content.touxiang }}"></image>
+        </view>
+        <view class="nicheng">{{ content.nicheng }}</view>
+        <view class="time"> {{ content.time }}</view>
+      </view>
+      <view class="text">
+        <text>{{ content.text }}</text>
+      </view>
+      <scroll-view class='imagelist' scroll-x>
+        <block wx:for='{{ content.images }}'>
+          <view class="imageitem">
+            <image src='{{ item }}' mode="aspectFill" bindtap="previewImg" data-index='{{index}}'> </image>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+
+  <!-- 点赞删除 -->
+    <view class="row">
+      <button bindtap='onLikeClick' wx:if='{{isLike}}' class="like-btn" disabled="{{likeDisable}}">
+        <image class='like-icon' src='/img/tubiao/like.png'></image>
+        <text class='like-text-active'>赞 {{content.likeNumber}}</text>
+      </button>
+      <button bindtap='onLikeClick' wx:else class="like-btn" disabled="{{likeDisable}}">
+        <image class='like-icon' src='/img/tubiao/unlike.png'></image>
+        <text class='like-text'>赞 {{content.likeNumber}}</text>
+      </button>
+      <button bindtap='onRemoveTopic' wx:if='{{removeAble}}' class="like-btn" disabled="{{removeDisable}}">
+        <image class='like-icon' src='/img/tubiao/delete.png'></image>
+        <text class='like-text'>删除</text>
+      </button>
+    </view>
+    <!-- 评论区 -->
+    <view wx:if='{{commentList.length>0}}' class="comment-container" >
+      <view class="row" wx:for='{{commentList}}' wx:key='index' style='position:relative;'>
+        <view class="comment-item column " bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style='{{item.txtStyle}};'>
+          <view class="row">
+            <view class="subtouxiang">
+              <image src='{{item.touxiang}}'></image>
+            </view>
+            <view class="subnicheng">{{item.nicheng}}</view>
+            <view class="subtime">{{item.time}}</view>
+          </view>
+          <view class="subtext">
+            <text>{{item.comment}}</text>
+          </view>
+        </view>
+        <view class="delete" wx:if='{{userOpenID==item._openid||userOpenID=="oPdH-4xyy7BhTsldRPK6q2Lwn630"}}'  data-index='{{index}}' data-openid="{{item._openid}}" data-commentid="{{item._id}}" data-index="{{index}}"
+          bindtap='deleteComment'>删除
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 回复区 -->
+  <view class="answer-container">
+    <form bindsubmit="upReplay">
+      <view class="text-content">
+        <view class='text-area'>
+          <textarea name="input-content" type="text" placeholder="说点什么吧~" placeholder-class="holder" value="{{comment}}" bindblur='getTextAreaContent'></textarea>
+        </view>
+      </view>
+      <view class="btn-view">
+        <button disabled="{{fbDisable}}" class="answer-btn" formType='submit'open-type="getUserInfo" > 回复</button>
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<view class="top"></view>
+
+
+<view class="content-box">
+
+  <view class=".userinfo">
+    <view class="touxiang"  open-type="getUserInfor">
+      <open-data type="userAvatarUrl" ></open-data>
+    </view>
+    <open-data type="userNickName"></open-data>
+  </view>
+  
+  <view class="liebiao">
+    <view class="liebiao-item">
+      <image src="/img/tubiao/shoucang.png" class="wtubiao" mode='widthFix' bindtap="toCollection">
+      </image>
+      收藏
+    </view>
+    <view class="liebiao-item">
+      <image src="/img/tubiao/dingdan.png" class="wtubiao" mode='widthFix' bindtap="toHistory">
+      </image>
+      说说
+    </view>
+    <view class="liebiao-item">
+      <image src="/img/tubiao/mylike.png" class="wtubiao" mode='widthFix'bindtap="toLike">
+      </image>
+      喜欢
+    </view>
+    <view class="liebiao-item">
+      <image src="/img/tubiao/luqu.png" class="wtubiao" mode='widthFix'bindtap="toAccept">
+      </image>
+      录取查询
+    </view>
+
+
+
+  </view>
+
+
+</view>

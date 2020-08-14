@@ -1,0 +1,16 @@
+<view class="box">
+  <view class="biaoti">免责声明</view>
+<view  style="padding:10px">
+<text class="shengming">                    
+本版本是个人开发的小呆猫(demo)，用于临时参加比赛，不涉及商业和引流用途,希望审核能通过。             
+    </text>
+</view>
+  
+<view class="bottom">
+    <text>By—ZJJ
+    2019/10
+    </text>
+     
+ </view>
+    
+</view>

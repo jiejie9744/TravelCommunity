@@ -1,0 +1,36 @@
+<!-- 创建说说按钮 -->
+<image class='icon' src='/img/tubiao/fabu.png' mode="widthFix" bindtap="create">
+</image>
+
+<!-- 最新回复提醒 -->
+<view class="newComment" wx:if='{{newreplaynum>0}}' bindtap='toNewReplay'>您有{{newreplaynum}}条新回复(点击查看)</view>
+
+<!-- 列表数据 -->
+<view class="content-container column">
+
+	<block wx:for='{{content}}' wx:key='index'>
+		<!-- 每条数据 -->
+		<view class="column content" bindtap="toDetail" data-topicid='{{item._id}}' data-openid='{{item._openid}}'>
+
+			<view class="row">
+				<view class="touxiang">
+					<image src="{{ item.touxiang }}"></image>
+				</view>
+				<view class="nicheng">{{ item.nicheng }}</view>
+				<view class="time"> {{ item.time }}</view>
+			</view>
+
+			<view class="text">
+				<text>{{ item.text }}</text>
+			</view>
+			<!-- 滑动容器 -->
+			<scroll-view class='imagelist' scroll-x>
+				<block wx:for='{{ item.images }}'>
+					<view class="imageitem">
+						<image src='{{ item }}' mode="aspectFill"> </image>
+					</view>
+				</block>
+			</scroll-view>
+		</view>
+	</block>
+</view>

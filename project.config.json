@@ -1,4 +1,5 @@
 {
+	"cloudfunctionRoot": "mycloud/",
 	"description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
@@ -6,14 +7,32 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
 		"autoAudits": false,
-		"checkInvalidKey": true
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.0",
+	"libVersion": "2.12.1",
 	"appid": "wxb0ec5e659232df30",
 	"projectname": "myshangcheng",
 	"debugOptions": {
@@ -22,6 +41,7 @@
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -31,13 +51,105 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/page3/index",
+					"pathName": "pages/page3/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/yanzheng",
+					"pathName": "pages/test/yanzheng",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page3/newreplay",
+					"pathName": "pages/page3/newreplay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page4/index",
+					"pathName": "pages/page4/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page4/uploadexcell",
+					"pathName": "pages/page4/uploadexcell",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page4/acceptresult",
+					"pathName": "pages/page4/acceptresult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page4/luqu",
+					"pathName": "pages/page4/luqu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page4/luqu",
+					"pathName": "pages/page4/luqu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page4/manager",
+					"pathName": "pages/page4/manager",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page2/detail",
+					"pathName": "pages/page2/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page2/index",
+					"pathName": "pages/page2/index",
+					"scene": null
+				}
+			]
 		}
 	}
 }

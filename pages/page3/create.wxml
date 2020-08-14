@@ -1,0 +1,29 @@
+<view class="content">
+	<form bindsubmit="formSubmit">
+		<!-- 文本区 -->
+		<view class="text-content">
+			<view class='text-area'>
+				<textarea name="input-content" type="text" placeholder="说点什么吧~" placeholder-class="holder" value="{{text}}" bindblur='getTextAreaContent' maxlength='800'></textarea>
+			</view>
+		</view>
+
+		<!-- 滑动图片栏 -->
+		<scroll-view class="image-group" scroll-x="true">
+			<block wx:for='{{images}}' wx:for-index='idx'>
+				<view class="img-container">
+					<image src='{{images[idx]}}' mode='aspectFill' data-index="{{idx}}" bindtap="previewImg"></image>
+					<icon type='clear' bindtap='removeImg' data-index="{{idx}}"></icon>
+				</view>
+			</block>
+		</scroll-view>
+
+		<!-- 按钮区 -->
+		<view class='btn-func'>
+			<button disabled="{{tjdisable}}" class="btn-img" bindtap='chooseImage'>添加图片</button>
+			<button disabled="{{fbdisable}}" class="btn" formType='submit' bindgetuserinfo="bindGetUserInfo">(●'◡发布◡'●)</button>
+		</view>
+	</form>
+
+
+
+</view>
